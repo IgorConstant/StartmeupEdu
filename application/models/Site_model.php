@@ -10,6 +10,14 @@ class Site_model extends CI_Model
         $this->db->where('ativo', 1);
         return $this->db->get('tutores')->result();
     }
+
+    //LISTAR POSTS
+    public function listarPosts()
+    {
+        $this->db->where('ativo', 1);
+        return $this->db->get('posts')->result();
+    }
+
 }
 
 /* End of file ModelName.php */

@@ -24,9 +24,8 @@
                     <tr>
                         <th>ID</th>
                         <th>Data</th>
+                        <th>Categoria</th>
                         <th>Título Post</th>
-                        <th>Autor</th>
-                        <th>Resumo</th>
                         <th class="text-center">Status</th>
                         <th class="text-center">Ações</th>
                     </tr>
@@ -37,9 +36,8 @@
                         <tr>
                             <td><?= $p->id ?></td>
                             <td><?= formataDataBr($p->data) ?></td>
+                            <td><?= $p->categoria ?></td>
                             <td><?= $p->nome_post ?></td>
-                            <td><?= $p->autor ?></td>
-                            <td><?= $p->resumo ?></td>
                             <td class="text-center"><?= ($p->ativo == 1 ? '<span class="badge badge-success">Ativo</span>' : '<span class="badge badge-danger">Inativo</span>') ?></td>
                             <td class="text-center">
                                 <?= anchor('post/editar/' . $p->id, '<i class="far fa-edit"></i>', array('title' => 'Editar')) ?>

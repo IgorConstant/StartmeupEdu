@@ -51,8 +51,7 @@ class Post extends CI_Controller
         $this->form_validation->set_rules('tituloPost', 'Titulo do Post', 'trim|required');
         $this->form_validation->set_rules('resumoPost', 'Resumo do Post', 'trim|required');
         $this->form_validation->set_rules('textoPost', 'Texto do Post', 'trim|required');
-        $this->form_validation->set_rules('autorPost', 'Autor do Post', 'trim|required');
-
+        $this->form_validation->set_rules('categoriaPost', 'Categoria do Post', 'trim|required');
 
         if ($this->form_validation->run() == TRUE) {
 
@@ -74,8 +73,8 @@ class Post extends CI_Controller
 
                 $inputAdicionar['nome_post'] = $this->input->post('tituloPost');
                 $inputAdicionar['resumo'] = $this->input->post('resumoPost');
+                $inputAdicionar['categoria'] = $this->input->post('categoriaPost');
                 $inputAdicionar['texto_post'] = $this->input->post('textoPost');
-                $inputAdicionar['autor'] = $this->input->post('autorPost');
                 $inputAdicionar['ativo'] = $this->input->post('ativo');
                 $inputAdicionar['data'] = unix_to_human(now('America/Sao_Paulo'));
                 $inputAdicionar['imagem'] = $this->upload->data('file_name');
@@ -85,7 +84,6 @@ class Post extends CI_Controller
                 $this->session->set_flashdata('msg', '<div class="alert alert-success" role="alert">Post criado com sucesso</div>');
                 redirect('post', 'refresh');
             }
-        
         } else {
 
 
@@ -121,8 +119,8 @@ class Post extends CI_Controller
 
         $this->form_validation->set_rules('tituloPost', 'Titulo do Post', 'trim|required');
         $this->form_validation->set_rules('resumoPost', 'Resumo do Post', 'trim|required');
+        $this->form_validation->set_rules('categoriaPost', 'Categoria do Post', 'trim|required');
         $this->form_validation->set_rules('textoPost', 'Texto do Post', 'trim|required');
-        $this->form_validation->set_rules('autorPost', 'Autor do Post', 'trim|required');
 
         if ($this->form_validation->run() == TRUE) {
 
@@ -144,7 +142,7 @@ class Post extends CI_Controller
             $inputEditar['nome_post'] = $this->input->post('tituloPost');
             $inputEditar['resumo'] = $this->input->post('resumoPost');
             $inputEditar['texto_post'] = $this->input->post('textoPost');
-            $inputEditar['autor'] = $this->input->post('autorPost');
+            $inputEditar['categoria'] = $this->input->post('categoriaPost');
             $inputEditar['ativo'] = $this->input->post('ativo');
 
 

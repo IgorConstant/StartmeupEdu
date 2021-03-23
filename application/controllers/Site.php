@@ -11,6 +11,10 @@ class Site extends CI_Controller
         $this->load->helper('url');
         $this->load->helper('text');
         $this->load->model('site_model');
+
+        //Load helper Data
+        $this->load->helper('date');
+        $this->load->helper('funcoes_helper');
     }
 
 
@@ -47,6 +51,7 @@ class Site extends CI_Controller
     public function blog()
     {
         $data['titulo'] = 'Startmeup Edu - Blog';
+        $data['postsblog'] = $this->site_model->listarPosts();
 
         $this->load->view('web/layout/header', $data);
         $this->load->view('web/blog');

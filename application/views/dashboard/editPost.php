@@ -34,12 +34,12 @@
                 ]) ?>
             </div>
             <div class="form-group">
-                <?= form_label('Autor Post') ?>
+                <?= form_label('Categoria') ?>
                 <?= form_input([
                     'type' => 'text',
                     'class' => 'form-control',
-                    'name' => 'autorPost',
-                    'value' => $query->autor
+                    'name' => 'categoriaPost',
+                    'value' => $query->categoria
                 ]) ?>
             </div>
             <div class="form-group">
