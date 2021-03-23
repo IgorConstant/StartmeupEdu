@@ -10,3 +10,33 @@
         }
     }
 }
+
+#listPosts {
+    padding: 60px 0;
+
+    .block-color {
+        background: $blue-color;
+        padding: 20px;
+
+        small {
+            color: $yellow-color;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        h4 {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .margin-mobile {
+            margin-bottom: 50px;
+        }
+    }
+}
