@@ -1,0 +1,55 @@
+#experimente {
+	background-image: url(../../assets/images/experimente-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	padding-top: 60px;
+
+	.text-area {
+		.small-text {
+			font-size: 14px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			color: $white-color;
+		}
+
+		small {
+			color: $white-color;
+			font-family: "Poppins", sans-serif;
+		}
+
+		p {
+			color: $white-color;
+			font-size: 14px;
+		}
+
+		h2 {
+			color: $white-color;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0px;
+
+			> li {
+				font-family: "Poppins", sans-serif;
+				color: $white-color;
+				font-size: 13px;
+				margin-bottom: 5px;
+				font-weight: 600;
+			}
+		}
+
+		.uk-button-default {
+			color: $white-color;
+			font-weight: 700;
+			background-color: $yellow-color;
+			border: none;
+			font-size: 16px;
+			padding: 5px 20px;
+			margin: 0 0 30px 0;
+		}
+	}
+}

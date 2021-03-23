@@ -1,0 +1,81 @@
+header {
+	background: $yellow-color;
+
+	.uk-navbar-sticky,
+	.uk-sticky-fixed {
+		background: $yellow-color;
+	}
+
+	.uk-padding-small {
+		padding: 7px;
+	}
+
+	@media (max-width: 768.98px) {
+		nav {
+			padding: 20px !important;
+		}
+	}
+
+	.uk-navbar-toggle {
+		color: $white-color;
+		margin-right: 15px;
+	}
+
+	.btn-matricula {
+		background: $blue-color;
+		color: $yellow-color !important;
+		border-radius: 50px;
+		min-height: 38px !important;
+		margin: 18px 0 0 10px;
+
+		animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+		box-shadow: 0 0 0 0 $blue-color;
+	}
+
+	@media (min-width: 1280px) {
+		.uk-navbar-left {
+			.icon {
+				position: absolute;
+				z-index: 198;
+				margin-top: 15px;
+			}
+
+			.logo {
+				position: absolute;
+				left: 10%;
+			}
+		}
+	}
+
+	@media (max-width: 999px) {
+		.icon {
+			display: none;
+		}
+	}
+
+	.uk-navbar-nav {
+		li {
+			font-weight: 700;
+
+			a {
+				color: $blue-color;
+				font-family: "Poppins", sans-serif;
+			}
+		}
+	}
+}
+
+.uk-offcanvas-bar {
+	background: $yellow-color;
+}
+
+.uk-nav-primary {
+	li {
+		a {
+			color: $blue-color !important;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 17px;
+		}
+	}
+}

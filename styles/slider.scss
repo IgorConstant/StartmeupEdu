@@ -1,0 +1,61 @@
+#slider-area {
+	h2 {
+		font-family: "Poppins", sans-serif;
+		text-transform: uppercase;
+		font-weight: 700;
+
+		span {
+			color: $yellow-color;
+		}
+
+		.banner-3 {
+			color: $blue-color;
+		}
+	}
+}
+
+#carousel-mobile {
+	@media (max-width: 999px) {
+		.uk-slider-container {
+			.uk-slider-items {
+				> li {
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.area-depoimentos {
+	.owl-nav {
+		position: absolute;
+		top: 20%;
+		left: 0;
+		right: 0;
+
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+			height: 100px;
+			color: inherit;
+			background: none;
+			border: none;
+			z-index: 100;
+
+			i {
+				font-size: 2.5rem;
+				color: $blue-color;
+			}
+		}
+
+		.owl-prev {
+			left: 10px;
+		}
+
+		.owl-next {
+			right: 10px;
+		}
+	}
+}

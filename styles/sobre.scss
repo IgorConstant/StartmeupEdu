@@ -1,0 +1,229 @@
+#sobre {
+	.bg-blue {
+		background-image: url(../../assets/images/bg-sobre.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+
+		.text-area {
+			padding: 20% 10%;
+
+			h3 {
+				color: $white-color;
+
+				span {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	.text-area {
+		padding: 5% 10%;
+
+		@media (max-width: 768.98px) {
+			padding: 5%;
+		}
+
+		.small-text {
+			font-size: 14px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			color: $blue-color;
+		}
+
+		.text {
+			color: $blue-color;
+			font-size: 14px;
+
+			@media (max-width: 768.98px) {
+				font-size: 13px;
+			}
+		}
+
+		img {
+			margin: 20px 0 40px 0;
+		}
+
+		.feature {
+			color: $yellow-color;
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 21px;
+
+			@media (max-width: 768.98px) {
+				font-size: 19px;
+			}
+		}
+	}
+
+	.uk-accordion {
+		li {
+			border: 2px solid $yellow-color;
+			padding: 10px;
+
+			a {
+				font-size: 14px;
+				font-weight: 700;
+				color: #fff;
+			}
+		}
+
+		.uk-accordion-content {
+			color: #fff;
+		}
+
+		.uk-open {
+			padding: 0px !important;
+
+			.uk-accordion-title {
+				background: $yellow-color;
+				padding: 10px;
+			}
+
+			.uk-accordion-content {
+				padding: 10px;
+			}
+		}
+
+		.uk-accordion-title::before {
+			content: "+";
+			color: $white-color;
+			background: none;
+			font-size: 16px;
+		}
+
+		.uk-open > .uk-accordion-title::before {
+			content: "-";
+			color: $white-color;
+			font-size: 16px;
+		}
+	}
+}
+
+#fundadores {
+	.img-founders {
+		img {
+			width: 100%;
+		}
+	}
+
+	.text-area {
+		@media (min-width: 1024px) {
+			padding: 10% 15%;
+		}
+
+		@media (max-width: 999px) {
+			padding: 10%;
+		}
+
+		h2 {
+			color: $yellow-color;
+			font-weight: 700;
+		}
+
+		p {
+			font-size: 14px;
+			color: $blue-color;
+		}
+	}
+}
+
+#banner-topo-empresas {
+	background-image: url(../../assets/images/banner-topo-empresa.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+
+	@media (max-width: 900px) {
+		height: 400px;
+	}
+
+	.uk-container {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.title-banner {
+		h2 {
+			color: $white-color;
+			text-transform: uppercase;
+
+			span {
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+#for-company {
+	.img-detail {
+		background-image: url(../../assets/images/banner-sessao-empresa.png);
+		height: 600px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		@media (max-width: 900px) {
+			height: 500px;
+		}
+
+		.text-banner {
+			@media (min-width: 1200px) {
+				padding: 10%;
+			}
+
+			padding: 20px;
+
+			h1 {
+				color: $white-color;
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+
+			.uk-button-default {
+				background: $blue-color;
+				color: $white-color;
+				font-weight: 700;
+				font-size: 20px;
+				border: none;
+
+				transition: all 0.3s ease 0s;
+
+				&:hover {
+					box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
+					transform: translateY(-7px);
+				}
+			}
+		}
+	}
+
+	.text-area {
+		padding: 13% 10%;
+
+		.small-text {
+			font-size: 14px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			color: $blue-color;
+		}
+
+		.text {
+			color: $blue-color;
+			font-size: 14px;
+		}
+
+		.feature {
+			color: $yellow-color;
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 21px;
+
+			@media (max-width: 768.98px) {
+				font-size: 19px;
+			}
+		}
+	}
+}

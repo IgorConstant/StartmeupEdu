@@ -1,0 +1,80 @@
+#competencias {
+	background: $yellow-color;
+	padding: 100px 20px;
+
+	.text-column {
+		.title {
+			font-size: 22px;
+			font-weight: 700;
+			color: $blue-color;
+		}
+
+		.text {
+			font-size: 14px;
+			color: $blue-color;
+
+			@media (min-width: 1024px) {
+				width: 82%;
+			}
+		}
+
+		.text-adendo {
+			font-size: 13px;
+		}
+	}
+
+	.list-column {
+		p {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $blue-color;
+			font-size: 18px;
+
+			.fa-caret-right {
+				color: #fff113;
+			}
+		}
+	}
+}
+
+#competencias-icon {
+	padding: 60px 20px;
+
+	.icon-competencia {
+		cursor: pointer;
+
+		h4 {
+			text-transform: uppercase;
+			color: $blue-color;
+			font-weight: 700;
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+}
+
+#neurolideranca,
+#pensamento-critico,
+#inteligencia-emocional,
+#financas-pessoais,
+#financas-corporativas,
+#tecnologias-4-0,
+#empreendedorismo,
+#tendencias-futuro,
+#negociacao-decisao,
+#comunicacao,
+#criatividade-inovacao,
+#marketing-digital {
+	.uk-modal-dialog {
+		border: 6px solid $blue-color !important;
+		box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.35) !important;
+	}
+
+	.uk-close:hover,
+	.uk-close:focus,
+	.uk-close {
+		color: $blue-color;
+	}
+}

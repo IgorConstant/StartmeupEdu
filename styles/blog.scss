@@ -1,0 +1,12 @@
+#introBlog {
+    background: $blue-color;
+    padding: 60px 0;
+
+    .main-text {
+        h1 {
+            color: $yellow-color;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+}

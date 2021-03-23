@@ -1,0 +1,477 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Poppins", sans-serif;
+}
+
+p,
+span,
+a,
+.uk-button-default,
+.uk-button,
+.uk-form-label {
+	font-family: "Poppins", sans-serif;
+}
+
+#faq {
+	padding: 80px 20px;
+
+	.accordion-area {
+		margin-top: 45px;
+
+		.uk-open {
+			padding: 0px !important;
+
+			.uk-accordion-title {
+				background: #cdcdcd;
+				padding: 10px;
+			}
+
+			.uk-accordion-content {
+				padding: 10px;
+			}
+		}
+
+		.uk-accordion {
+			li {
+				border: 2px solid #cdcdcd;
+				padding: 10px;
+			}
+		}
+
+		.uk-accordion-title {
+			font-size: 15px;
+			font-weight: 700;
+			color: $blue-color;
+		}
+
+		.uk-accordion-content {
+			color: $blue-color;
+			font-size: 14px;
+		}
+
+		.uk-accordion-title::before {
+			content: "+";
+			color: $blue-color;
+			background: none;
+			font-size: 16px;
+		}
+
+		.uk-open > .uk-accordion-title::before {
+			content: "-";
+			color: $blue-color;
+			font-size: 16px;
+		}
+	}
+
+	.text-area {
+		.small-text {
+			font-size: 14px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			color: $blue-color;
+		}
+
+		h3 {
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $blue-color;
+
+			span {
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+.float {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 40px;
+	right: 20px;
+	background-color: #25d366;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
+
+	animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+
+	@keyframes shake {
+		10%,
+		90% {
+			transform: translate3d(-1px, 0, 0);
+		}
+
+		20%,
+		80% {
+			transform: translate3d(2px, 0, 0);
+		}
+
+		30%,
+		50%,
+		70% {
+			transform: translate3d(-4px, 0, 0);
+		}
+
+		40%,
+		60% {
+			transform: translate3d(4px, 0, 0);
+		}
+	}
+}
+
+.my-float {
+	margin-top: 11px;
+}
+
+@keyframes pulse {
+	to {
+		box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+	}
+}
+
+#alert {
+	.cookie-popup {
+		font-size: 14px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: fixed;
+		bottom: -6.25rem;
+		left: 1.25rem;
+		right: 1.25rem;
+		padding: 0.625rem 0.9375rem;
+		box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.15);
+		line-height: 150%;
+		transition: opacity 0.5s;
+		opacity: 0;
+		font-family: "Poppins", sans-serif;
+
+		@media (max-width: 999px) {
+			left: 0.25rem;
+			margin-bottom: 6%;
+		}
+	}
+
+	.cookie-popup--short {
+		right: none;
+		width: 21.875rem;
+
+		@media (max-width: 768.98px) {
+			width: 240px;
+		}
+	}
+
+	.cookie-popup--dark {
+		background: #000;
+		color: #fff;
+	}
+
+	.cookie-popup--not-accepted {
+		opacity: 1;
+		animation: cookie-popup-in 0.5s ease forwards;
+	}
+
+	.cookie-popup--accepted {
+		opacity: 0;
+	}
+
+	.cookie-popup a {
+		color: skyblue;
+	}
+
+	.cookie-popup a:visited {
+		color: skyblue;
+		text-decoration: none;
+	}
+
+	.cookie-popup-actions {
+		flex: 1;
+		text-align: right;
+	}
+
+	.cookie-popup-actions button {
+		color: $yellow-color;
+		border: none;
+		background: none;
+		font-family: inherit;
+		font-style: inherit;
+		font-size: inherit;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		padding: 0;
+		cursor: pointer;
+	}
+
+	.cookie-popup-actions button:hover {
+		text-decoration: underline;
+	}
+
+	@keyframes cookie-popup-in {
+		from {
+			bottom: -6.25rem;
+		}
+
+		to {
+			bottom: 1.25rem;
+		}
+	}
+}
+
+#pre-contato,
+#form-empresa,
+#bolsa-de-estudo {
+	.uk-modal-dialog {
+		background-color: $blue-color;
+		width: 750px;
+		padding: 45px 60px;
+
+		@media (max-width: 768.98px) {
+			padding: 40px;
+		}
+
+		h2,
+		h3,
+		h4 {
+			font-weight: 700;
+			color: $yellow-color;
+			text-transform: uppercase;
+		}
+		.uk-close {
+			color: $white-color;
+			font-weight: 700;
+		}
+
+		.uk-form-label,
+		label {
+			color: $white-color;
+		}
+
+		.uk-form-controls {
+			margin-top: 5px;
+		}
+
+		p {
+			color: $yellow-color;
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		.uk-button-default {
+			color: $white-color;
+			font-weight: 700;
+			background-color: $yellow-color;
+			border: none;
+			font-size: 15px;
+		}
+
+		.uk-accordion {
+			li {
+				border: 2px solid $yellow-color;
+				padding: 10px;
+
+				a {
+					font-size: 14px;
+					font-weight: 700;
+					color: #fff;
+				}
+			}
+
+			.uk-accordion-content {
+				color: #fff;
+			}
+
+			.uk-open {
+				padding: 0px !important;
+
+				.uk-accordion-title {
+					background: $yellow-color;
+					padding: 10px;
+				}
+
+				.uk-accordion-content {
+					padding: 10px;
+				}
+			}
+
+			.uk-accordion-title::before {
+				content: "+";
+				color: $white-color;
+				background: none;
+				font-size: 16px;
+			}
+
+			.uk-open > .uk-accordion-title::before {
+				content: "-";
+				color: $white-color;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+#social-icons {
+	.sidebar-social {
+		position: fixed;
+
+		ul {
+			list-style: none;
+
+			> li {
+				background-color: $blue-color;
+
+				a {
+					color: #fff;
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.sidebar-social {
+			right: 0;
+			bottom: 20px;
+			top: 40%;
+			display: table;
+			z-index: 2;
+			position: fixed;
+			width: 80px;
+
+			.list-one,
+			.list-two,
+			.list-three {
+				text-align: center;
+				padding: 6px;
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+
+#form-matricula {
+	background: $blue-color;
+
+	.uk-accordion {
+		li {
+			border: 2px solid $yellow-color;
+			padding: 10px;
+
+			a {
+				font-size: 14px;
+				font-weight: 700;
+				color: #fff;
+			}
+		}
+
+		.uk-form-label,
+		label {
+			color: $white-color;
+			text-transform: uppercase;
+		}
+
+		.uk-button-default {
+			background: $yellow-color;
+			color: $white-color;
+			font-weight: 700;
+			border: none;
+		}
+
+		h4 {
+			color: $white-color;
+			text-transform: uppercase;
+		}
+
+		.uk-accordion-content {
+			color: #fff;
+		}
+
+		.uk-open {
+			padding: 0px !important;
+
+			.uk-accordion-title {
+				background: $yellow-color;
+				padding: 10px;
+			}
+
+			.uk-accordion-content {
+				padding: 10px;
+			}
+		}
+
+		.uk-accordion-title::before {
+			content: "+";
+			color: $white-color;
+			background: none;
+			font-size: 16px;
+		}
+
+		.uk-open > .uk-accordion-title::before {
+			content: "-";
+			color: $white-color;
+			font-size: 16px;
+		}
+	}
+}
+
+#obrigado {
+	background: $yellow-color;
+	height: 100vh;
+
+	.uk-container {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+
+		.text-tky {
+			h1,
+			h2 {
+				text-transform: uppercase;
+				font-weight: 700;
+				color: $blue-color;
+			}
+		}
+	}
+}
+
+#politica-intro {
+	background: $blue-color;
+	height: 300px;
+
+	.uk-container {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	h1 {
+		color: $white-color;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+
+#text-politica {
+	h3 {
+		color: $blue-color;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
