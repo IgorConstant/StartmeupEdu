@@ -1,6 +1,6 @@
 body {
-	font-size: .875rem;
-	font-family: 'Poppins', sans-serif !important;
+	font-size: 0.875rem;
+	font-family: "Poppins", sans-serif !important;
 }
 
 .feather {
@@ -25,7 +25,7 @@ body {
 }
 
 .border-left-primary {
-	border-left: .25rem solid #4e73df !important;
+	border-left: 0.25rem solid #4e73df !important;
 }
 
 .atalho-add,
@@ -48,7 +48,6 @@ body {
 	color: red;
 }
 
-
 /*
  * Sidebar
  */
@@ -60,7 +59,7 @@ body {
 	left: 0;
 	z-index: 100;
 	padding: 10px 0 0;
-	box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+	box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 767.98px) {
@@ -73,7 +72,7 @@ body {
 	position: relative;
 	top: 0;
 	height: calc(100vh - 48px);
-	padding-top: .5rem;
+	padding-top: 0.5rem;
 	overflow-x: hidden;
 	overflow-y: auto;
 	/* Scrollable contents if viewport is shorter than content. */
@@ -90,7 +89,7 @@ body {
 	font-weight: 700;
 	color: #333;
 	font-size: 17px;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	text-transform: uppercase;
 }
 
@@ -109,7 +108,7 @@ body {
 }
 
 .sidebar-heading {
-	font-size: .75rem;
+	font-size: 0.75rem;
 	text-transform: uppercase;
 }
 
@@ -118,36 +117,35 @@ body {
  */
 
 .navbar-brand {
-	padding-top: .75rem;
-	padding-bottom: .75rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
 	font-size: 1rem;
-	box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+	box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .navbar .navbar-toggler {
-	top: .25rem;
+	top: 0.25rem;
 	right: 1rem;
 }
 
 .navbar .form-control {
-	padding: .75rem 1rem;
+	padding: 0.75rem 1rem;
 	border-width: 0;
 	border-radius: 0;
 }
 
 .form-control-dark {
 	color: #fff;
-	background-color: rgba(255, 255, 255, .1);
-	border-color: rgba(255, 255, 255, .1);
+	background-color: rgba(255, 255, 255, 0.1);
+	border-color: rgba(255, 255, 255, 0.1);
 }
 
 .form-control-dark:focus {
 	border-color: transparent;
-	box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
 }
-
 
 .h2 {
 	font-weight: 700 !important;
@@ -156,4 +154,18 @@ body {
 
 .banner-mini {
 	width: 200px;
+}
+
+.first-card {
+	background: url(../../assets/images/dashboard/undraw_Post_re_mtr4.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.second-card {
+	background: url(../../assets/images/dashboard/undraw_Online_learning_re_qw08.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
