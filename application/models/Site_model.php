@@ -18,6 +18,12 @@ class Site_model extends CI_Model
         return $this->db->get('posts')->result();
     }
 
+
+    public function listarMateriais()
+    {
+        $this->db->where('ativo', 1);
+        return $this->db->get('materiais')->result();
+    }
 }
 
 /* End of file ModelName.php */

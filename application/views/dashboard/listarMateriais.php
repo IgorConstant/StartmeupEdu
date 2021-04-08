@@ -8,13 +8,13 @@
         </div>
     </div>
 
-    <!-- <section id="error-area">
+    <section id="error-area">
         <div class="row">
             <div class="col-12 col-sm-12">
                 <?= $this->session->userdata('msg', array('class' => 'mb-5')); ?>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <div class="row">
         <div class="col-12 col-sm-12">
@@ -24,11 +24,30 @@
                         <th>ID</th>
                         <th>Nome do Material</th>
                         <th>Descrição</th>
-                        <th>Arquivo</th>
                         <th class="text-center">Status</th>
                         <th class="text-center">Ações</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <?php foreach ($materiais as $m) { ?>
+                        <tr>
+                            <td><?= $m->id ?></td>
+                            <td><?= $m->nome_material ?></td>
+                            <td><?= $m->descricao_material ?></td>
+                            <td class="text-center"><?= ($m->ativo == 1 ? '<span class="badge badge-success">Ativo</span>' : '<span class="badge badge-danger">Inativo</span>') ?></td>
+                            <td class="text-center">
+                                <?= anchor('materiais/editarmateriais/' . $m->id, '<i class="far fa-edit"></i>', array('title' => 'Editar')) ?>
+                                <?= anchor('materiais/deletarmateriais/' . $m->id, '<i class="far fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
+
+                                <?php if ($m->ativo == 1) { ?>
+                                    <?= anchor('materiais/desativarmateriais/' . $m->id, '<i class="fas fa-toggle-on"></i>', array('title' => 'Desativar')) ?>
+                                <?php } else { ?>
+                                    <?= anchor('materiais/ativarmateriais/' . $m->id, '<i class="fas fa-toggle-off"></i>', array('title' => 'Ativar')) ?>
+                                <?php } ?>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
             </table>
         </div>
     </div>

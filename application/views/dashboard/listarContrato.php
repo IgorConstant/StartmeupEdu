@@ -8,13 +8,13 @@
         </div>
     </div>
 
-    <!-- <section id="error-area">
+    <section id="error-area">
         <div class="row">
             <div class="col-12 col-sm-12">
                 <?= $this->session->userdata('msg', array('class' => 'mb-5')); ?>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <div class="row">
         <div class="col-12 col-sm-12">

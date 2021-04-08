@@ -59,6 +59,7 @@
                         <li><a href="<?= base_url() ?>" data-id="sobre">Sobre Nós</a></li>
                         <li><a href="<?= base_url('empresas') ?>" data-id="Empresas">Para Empresas</a></li>
                         <li><a href="<?= base_url() ?>" data-id="competencias">O Programa</a></li>
+                        <li><a href="<?= base_url('materiais-gratuitos') ?>" data-id="Materiais">Materiais</a></li>
                         <li><a href="<?= base_url('blog') ?>" data-id="Blog">Blog</a></li>
                         <li><a href="https://startmeup-edu.moodlecloud.com/login/index.php" target="_blank">Área do Aluno</a></li>
                         <li><a class="btn-matricula" href="#" uk-toggle="target: #pre-contato">Saiba Mais</a></li>
@@ -81,7 +82,8 @@
                 <li class="offcanvas-link"><a href="<?= base_url() ?>" data-id="sobre">Sobre Nós</a></li>
                 <li class="offcanvas-link"><a href="<?= base_url('empresas') ?>" data-id="Empresas">Para Empresas</a></li>
                 <li class="offcanvas-link"><a href="<?= base_url() ?>" data-id="competencias">O Programa</a></li>
-                <li class="offcanvas-link"><a href="<?= base_url() ?>" data-id="mentores">Mentores</a></li>
+                <li><a href="<?= base_url('materiais-gratuitos') ?>" data-id="Materiais">Materiais</a></li>
+                <li class="offcanvas-link"><a href="<?= base_url('blog') ?>" data-id="Blog">Blog</a></li>
                 <li class="offcanvas-link"><a href="https://startmeup-edu.moodlecloud.com/login/index.php" target="_blank">Área do Aluno</a></li>
             </ul>
         </div>

@@ -57,4 +57,14 @@ class Site extends CI_Controller
         $this->load->view('web/blog');
         $this->load->view('web/layout/footer');
     }
+
+    public function materiais()
+    {
+        $data['titulo'] = 'Startmeup Edu - Materiais Gratuitos';
+        $data['postsblog'] = $this->site_model->listarMateriais();
+
+        $this->load->view('web/layout/header', $data);
+        $this->load->view('web/materiais-gratuitos');
+        $this->load->view('web/layout/footer');
+    }
 }

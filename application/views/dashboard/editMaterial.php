@@ -21,7 +21,7 @@
                     'type' => 'text',
                     'class' => 'form-control',
                     'name' => 'nomeMaterial',
-                    'required' => ''
+                    'value' => $query->nome_material
                 ]) ?>
             </div>
             <div class="form-group">
@@ -30,31 +30,37 @@
                     'type' => 'text',
                     'class' => 'form-control',
                     'name' => 'descMaterial',
-                    'required' => ''
+                    'value' => $query->descricao_material
                 ]) ?>
             </div>
-
             <div class="form-group">
-                <?= form_label('Em caso de vídeo, insira a URL') ?>
+                <?= form_label('Em caso de vídeo, altere a URL') ?>
                 <?= form_input([
                     'type' => 'text',
                     'class' => 'form-control',
-                    'name' => 'videoMaterial'
+                    'name' => 'videoMaterial',
+                    'value' => $query->video_url
                 ]) ?>
             </div>
-
-            <div class="form-group">
-                <?= form_label('Em caso de arquivo, selecione um em seu computador') ?>
-                <input type="file" name="pdfMaterial" class="form-control-file" id="exampleFormControlFile2" required="">
-            </div>
-
             <div class="form-group">
                 <?= form_label('Ativo') ?>
-                <?= form_dropdown('ativo', [1 => 'Sim', 0 => 'Não'], 1, ['class' => 'form-control']) ?>
+                <?= form_dropdown('ativo', [1 => 'Sim', 0 => 'Não'], ($query->ativo == 1 ? 1 : 0), ['class' => 'form-control']) ?>
+            </div>
+            <div class="arquivo">
+                <?= form_label('Arquivo') ?>
+                <br />
+                <a class="mt-4 mb-4 pb-4" href="<?php echo base_url('upload/docs/' . $query->arquivo) ?>"><?php echo $query->nome_material ?> <i class="far fa-file-pdf"></i></a>
+            </div>
+            <div class="form-group mt-4">
+                <button type="button" class="btn btn-outline-warning mb-3 btn-trocar"><i class="fas fa-exchange-alt"></i> Trocar Arquivo</button>
+                <button type="button" class="btn btn-outline-danger mb-3 btn-cancelar"><i class="fas fa-ban"></i> Cancelar</button>
+                <input type="file" name="pdfMaterial" class="form-control-file input-change-file hide" id="exampleFormControlFile3" required="" disabled="">
             </div>
 
             <hr />
-            <?= form_submit('submit', 'Adicionar novo Material', ['class' => 'btn btn-success mt-5 mb-5']) ?>
+            <?= form_hidden('idMateriais', $query->id); ?>
+            <?= form_submit('submit', 'Atualizar Material', ['class' => 'btn btn-success mt-5 mb-5']) ?>
+
 
             <?= form_close() ?>
         </div>

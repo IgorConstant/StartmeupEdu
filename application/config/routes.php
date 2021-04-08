@@ -58,3 +58,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['empresas'] = "Site/Empresas";
 $route['blog'] = "Site/Blog";
 $route['politica-de-privacidade'] = "Site/Politica";
+$route['materiais-gratuitos'] = "Site/Materiais";

@@ -72,5 +72,13 @@
                             <?php echo anchor('contratos', '<span>Contratos</span>', array('class' => 'nav-link')) ?>
                         </li>
                     </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Manutenção</span>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <?php echo anchor('log', '<span>Operation Log</span>', array('class' => 'nav-link')) ?>
+                        </li>
+                    </ul>
                 </div>
             </nav>
