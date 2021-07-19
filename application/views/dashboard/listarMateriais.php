@@ -37,7 +37,7 @@
                             <td class="text-center"><?= ($m->ativo == 1 ? '<span class="badge badge-success">Ativo</span>' : '<span class="badge badge-danger">Inativo</span>') ?></td>
                             <td class="text-center">
                                 <?= anchor('materiais/editarmateriais/' . $m->id, '<i class="far fa-edit"></i>', array('title' => 'Editar')) ?>
-                                <?= anchor('materiais/deletarmateriais/' . $m->id, '<i class="far fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
+                                <?= anchor('materiais/apagarmateriais/' . $m->id, '<i class="far fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
 
                                 <?php if ($m->ativo == 1) { ?>
                                     <?= anchor('materiais/desativarmateriais/' . $m->id, '<i class="fas fa-toggle-on"></i>', array('title' => 'Desativar')) ?>

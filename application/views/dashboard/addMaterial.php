@@ -53,6 +53,11 @@
                 <?= form_dropdown('ativo', [1 => 'Sim', 0 => 'Não'], 1, ['class' => 'form-control']) ?>
             </div>
 
+            <div class="form-group mt-4">
+                <?= form_label('Selecione uma imagem de destaque') ?>
+                <input type="file" name="imgDestaqueMaterial" class="form-control-file" id="exampleFormControlFile6" required="">
+            </div>
+
             <hr />
             <?= form_submit('submit', 'Adicionar novo Material', ['class' => 'btn btn-success mt-5 mb-5']) ?>
 
